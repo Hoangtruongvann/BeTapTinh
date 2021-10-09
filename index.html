@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bé Tập Tính</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--Bootrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bé Tập tính</h1>
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    <label for="SoThuNhat" class="col-md-4 col-form-label">Số Thứ Nhất</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="SoThuNhat">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="SoThuHai" class="col-md-4 col-form-label">Số Thứ Hai</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="SoThuHai">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="KetQua" class="col-md-4 col-form-label">Kết Quả</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="KetQua" readonly = "true">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-md-4 col-form-label">Thông Báo</label>
+                    <div class="col-md-8">
+                    <p id="notice"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-4">
+                        <input type="radio" id="cong" name="PT" value="cong">
+                        <label for="cong">Cộng</label><br>
+                    </div>
+                    <div class="col-4">
+                        <input type="radio" id="tru" name="PT" value="tru">
+                        <label for="tru">Trừ</label><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <input type="radio" id="nhan" name="PT" value="nhan">
+                        <label for="nhan">Nhân</label><br>
+                    </div>
+                    <div class="col-4">
+                        <input type="radio" id="chia" name="PT" value="chia">
+                        <label for="chia">Chia</label><br>
+                    </div>
+                </div>
+                <div class="row bt">
+                    <button id = "Ans">Tính</button>
+                </div>
+            </div>
+
+            <script src = "./script.js"></script>
+
+</html>
