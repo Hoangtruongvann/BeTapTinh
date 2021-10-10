@@ -12,13 +12,16 @@ document.getElementById("SoThuNhat").onblur = function CheckOutX()
 {
     if(GetX() == '')
     document.getElementById("notice").innerHTML = "Bạn chưa nhập <i>Số thứ nhất</i>!";
-
+    else if(isNaN(GetX()))
+    document.getElementById("notice").innerHTML = "Giá trị nhập ở ô <i>Số thứ nhất</i> không phải là 1 số!";
 }
 
 document.getElementById("SoThuHai").onblur = function CheckOutY()
 {
     if(GetY() == '')
     document.getElementById("notice").innerHTML = "Bạn chưa nhập <i>Số thứ hai</i>!";   
+    else if(isNaN(GetY()))
+    document.getElementById("notice").innerHTML = "Giá trị nhập ở ô <i>Số thứ hai</i> không phải là 1 số!";
 
 }
 
